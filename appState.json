@@ -1,0 +1,109 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "5a93e0d2-6cc6-4d71-9bb6-484b933357ee": {
+        "id": "5a93e0d2-6cc6-4d71-9bb6-484b933357ee",
+        "parent": null,
+        "name": "singapotesty",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "0f8677d3-f173-4f54-afb4-5d4cfee671de"
+        ],
+        "isRemovable": false,
+        "filePath": "singapotesty"
+      },
+      "0f8677d3-f173-4f54-afb4-5d4cfee671de": {
+        "id": "0f8677d3-f173-4f54-afb4-5d4cfee671de",
+        "parent": "5a93e0d2-6cc6-4d71-9bb6-484b933357ee",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "singapotesty/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigapSoutheast1induSingapoqainduany",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "767a6dff-1ac8-46f0-aaa7-fe08e350a4be": {
+            "id": "767a6dff-1ac8-46f0-aaa7-fe08e350a4be",
+            "name": "Test event",
+            "functionId": "0f8677d3-f173-4f54-afb4-5d4cfee671de",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "rootNode": "5a93e0d2-6cc6-4d71-9bb6-484b933357ee",
+    "openFiles": [
+      "0f8677d3-f173-4f54-afb4-5d4cfee671de"
+    ],
+    "currentFileId": "0f8677d3-f173-4f54-afb4-5d4cfee671de",
+    "resources": {
+      "apigapSoutheast1induSingapoqainduany": {
+        "name": "apigapSoutheast1induSingapoqainduany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-southeast-1",
+          "apiMode": 0,
+          "apiName": "induSingapo",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "qa/indu",
+          "resourcePath": "/qa/indu",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test11",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "singapotesty",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1579681714226
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "singapotesty",
+      "url": "https://github.com/Indunil1992/singapotesty"
+    }
+  }
+}
